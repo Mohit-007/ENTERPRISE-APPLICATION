@@ -1,2 +1,2 @@
 # ENTERPRISE-APPLICATION
-It is a enterprise web application for a spicy and salty food item business. It uses languages and technology like HTML, CSS, JavaScript, JSP (Java Server Pages) in the J2EE edition.
+It is a enterprise application for a spicy and salty food item business. It has web application and java desktop application version. The web application version (APPLICATION) includes or uses languages and technology like HTML, CSS, JavaScript, JSP (Java Server Pages) and MySQL database in the J2EE edition. The java desktop application version (BUSSINESS) includes java and java graphical user interface (GUI) library with MySQL database.
