@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+body
+{
+	background-color: #8b9dc3 ;
+}
+.middle
+{
+	font-size: 25px ;
+	position: absolute;
+	top: 300px;
+	left: 500px;
+	
+	padding: 10px 30px;
+}
+.button
+{
+	font-size: 30px ;
+	position: absolute;
+	top: 500px;
+	left: 500px;
+	
+}
+.password
+{
+	transform: translateX(-20px);
+}
+.button_0
+{
+	border : 1px solid white;
+	padding: 10px 30px;
+    border-radius: 10px;
+    border-width: 2px; 
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+
+}
+.button_1
+{
+	
+	background-color: #3b5998;
+
+}
+.button_2
+{
+	background-color: lime;
+	margin-left: 20px;
+}
+.box
+{
+	padding: 10px 10px;
+	font-size: 15px;
+	font-style: bold;
+	
+}
+</style>
+</head>
+<body>
+	<form action = "validate.jsp">
+	<div class="middle">
+		
+			Identity : <input class="box" id = "u" type="text" name="string1" placeholder="username" size = "30px" ><br><br>
+			<div class = "password">
+			Password : <input class="box " id = "p" type="password" name="string2" placeholder="password" size = "30px">
+			</div>
+	</div>
+	<div class="button">
+		
+		<button type="submit" class="button_0 button_1">login</button>
+		<button type="submit" class="button_0 button_2" >create a new account</button>
+	</div>
+	
+					
+	</form>
+	
+		
+</body>
+</html>
+
+	

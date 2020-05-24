@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+body
+{
+	font-style: italic;
+}
+table
+{
+	padding: 50px 100px 100px 50px;
+	
+	word-spacing: 10px;
+	
+	font-size: 25px;
+	border: 5px solid white;
+	margin-left: 10px;
+	margin-top: 25px;
+	border-color: black;
+	border-style: solid;
+}
+th
+{
+	text-decoration: none;
+	padding: 20px 20px 20px 20px;
+	//color: yellow;
+	border-color: black;
+	border-style: solid;
+}
+td
+{
+	
+	padding: 25px 25px 25px 25px;
+	border-color: black;
+	border-style: solid;
+}
+input.checkbox
+{
+	border-color: black;
+	border-style: none;	
+	height: 25px;
+	width: 25px;
+
+}
+
+input.Quantity , input.pri , input.total
+{
+	height: 55px;
+	width: 100px;
+	font-size: 24px;
+}
+.ok
+{
+	margin-left: 500px;
+	margin-top: 50px;
+	height: 50px;
+	width: 200px;
+	font-size: 40px;
+	padding: 0px 0px 0px 0px;
+
+}
+h1
+{
+	margin-left: 400px;
+	font-size: 75px;
+}
+p
+{
+	font-size: 50px;
+	color: blue;
+}
+</style>
+<script>
+
+function calculate()
+{
+	
+	document.shopping.pri1.value = (document.shopping.qty1.value)*120;
+	document.shopping.pri2.value = (document.shopping.qty2.value)*120;
+	document.shopping.pri3.value = (document.shopping.qty3.value)*120;
+	document.shopping.pri4.value = (document.shopping.qty4.value)*120;
+	document.shopping.pri5.value = (document.shopping.qty5.value)*120;
+	document.shopping.pri6.value = (document.shopping.qty6.value)*120;
+	document.shopping.pri7.value = (document.shopping.qty7.value)*120;
+	document.shopping.pri8.value = (document.shopping.qty8.value)*120;
+	document.shopping.pri9.value = (document.shopping.qty9.value)*120;
+	document.shopping.pri10.value = (document.shopping.qty10.value)*120;
+	
+	 
+}
+
+function total()
+{
+	
+	var sum = 0;
+	sum = Number(document.shopping.pri1.value) + Number(document.shopping.pri2.value)  + Number(document.shopping.pri3.value) + Number(document.shopping.pri4.value) + Number(document.shopping.pri5.value) + Number(document.shopping.pri6.value) + Number(document.shopping.pri7.value) + Number(document.shopping.pri8.value) + Number(document.shopping.pri9.value) + Number(document.shopping.pri10.value);
+	document.shopping.total.value = sum
+	
+}	
+
+	</script>
+</head>
+<body>
+	
+	<h1>LIST</h1>
+	<p><marquee direction="right" speed= "25"> Murli Bhujia Bhandar</marquee> </p>
+	<form action="invoice.jsp" name="shopping">
+	<table cellspacing="20px">
+		<tr>
+			
+			<th>Exclusive variety</th>
+			<th>Reasonable Price</th>
+			<th>Quantity</th>
+			<th>Price</th>
+		</tr>
+	
+		<tr>
+			<td><input type="checkbox" name="namkeen" value="Baarik Bhujia " check = "checked" class="checkbox"> Barik Bhujia </td>
+			<td> RS 120 </td>
+			<td><input type="number" name="qty1" value = "0" class="Quantity" oninput="calculate()" onchange="calculate(this.value)"></td>
+			<td><input class="price" type="number" name="pri1" ></td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" name="namkeen" check = "checked" value="Mota Bhujia" class="checkbox"> Mota Bhujia</td>
+			 
+			<td> RS 120 </td>
+			<td><input type="number" name="qty2" value = "0" class="Quantity" oninput="calculate()" onchange="calculate(this.value)"></td>
+			<td><input class="price" type="number" name="pri2" ></td>
+</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" name="namkeen" check = "checked" value="Bhavnagri Bhujia" class="checkbox"> Bhavnagri Bhujia</td>
+			  
+			<td> RS 120 </td>
+			<td><input type="number" name="qty3" value = "0" class="Quantity" oninput="calculate()" onchange="calculate(this.value)"></td>
+			<td><input class="price" type="number" name="pri3" ></td>
+</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" name="namkeen" check = "checked" value="Muniya bhujia" class="checkbox"> Muniya bhujia</td>
+
+			<td> RS 120 </td>
+			<td><input type="number" name="qty4" value = "0" class="Quantity" oninput="calculate()" onchange="calculate(this.value)"></td>
+			<td><input class="price" type="number" name="pri4" ></td>
+</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" name="namkeen" check = "checked" value="Bundiya"  class="checkbox"> Bundiya</td>
+ 
+			<td> RS 120 </td>
+			<td><input type="number" name="qty5" value = "0" class="Quantity" oninput="calculate()" onchange="calculate(this.value)"></td>
+			<td><input class="price" type="number" name="pri5" ></td>
+</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" name="namkeen" check = "checked"  value="Ganthiya" class="checkbox"> Ganthiya</td>  
+			<td> RS 120 </td>
+			<td><input type="number" name="qty6" value = "0" class="Quantity" oninput="calculate()" onchange="calculate(this.value)"></td>
+			<td><input class="price" type="number" name="pri6" ></td>
+</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" name="namkeen" check = "checked"  value="Spicy Mixture"  class="checkbox"> Spicy Mixture</td> 
+			<td> RS 120 </td>
+			<td><input type="number" name="qty7" value = "0" class="Quantity" oninput="calculate()" onchange="calculate(this.value)"></td>
+			<td><input class="price" type="number" name="pri7" ></td>
+</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" name="namkeen" check = "checked" value="Sweet Mixture"  class="checkbox"> Sweet Mixture</td> 
+			<td> RS 120 </td>
+			<td><input type="number" name="qty8" value = "0" class="Quantity" oninput="calculate()" onchange="calculate(this.value)"></td>
+			<td><input class="price" type="number" name="pri8" ></td>
+</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" name="namkeen" check = "checked" value="Simple Papad"  class="checkbox"> Simple Papad </td>
+			<td> RS 100 </td>
+			<td><input type="number" name="qty9" value = "0" class="Quantity" oninput="calculate()" onchange="calculate(this.value)"></td>
+			<td><input class="price" type="number" name="pri9" ></td>
+</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" name="namkeen" check = "checked" value="javitri Papad"  class="checkbox"> javitri Papad </td>
+			<td> RS 120 </td>
+			<td><input type="number" name="qty10" value = "0" class="Quantity" oninput="calculate()" onchange="calculate(this.value)"></td>
+			<td><input class="price" type="number" name="pri10" ></td>
+</td>
+		</tr>
+		<tfoot>
+			<tr>
+				
+				<td></td>
+				<td></td>
+				<td onclick="total()">Total</td>
+				<td><input class="total" type="number" name="total" onclick="total()"></td>
+			</tr>
+		</tfoot>
+			
+		</tr>
+				
+	</table>
+	<input type="submit" class = "ok" name="" value="ok">
+	</form>
+</body>
+</html>
